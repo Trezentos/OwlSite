@@ -27,6 +27,10 @@ p{
     text-align: left;
 }
 
+span{
+    color:wheat;
+}
+
 .container{
     display: flex;
     align-items: center;
@@ -95,6 +99,105 @@ p{
     
 }
 /* End Hero Section */
+
+/* Description Section */
+#description .description{
+
+    flex-direction: column;
+    max-width: 1500px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#description .icon{
+    width: 55px;
+    margin-bottom: 10px;
+}
+
+
+#description .description-top{
+    width: 80%;
+}
+
+#description .description-top h1{
+    text-align: center;
+    font-size: 4rem;
+
+}
+
+#description .description-top p{
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    line-height: 2rem;
+    
+}
+
+#description .description-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+#description .description-bottom h1{
+    font-size: 2.5rem;
+    
+}
+
+#description .description-bottom p{
+    color:wheat;
+    font-size: 2rem;
+    
+}
+
+#description .description-item{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 10px;
+    background-image: url('./images/owl2.jpg');
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#description .description-item::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: .55;
+    z-index: -1;
+}
+/* End description Section */
+
+
+/* Discoverys section */
+#discoverys .discoverys{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+#discoverys .discovery-header h1{
+    font-size: 4rem;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
 
 
 
