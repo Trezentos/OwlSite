@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    color:black;
+    line-height: 1.9rem;
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+/* Hero Section */
+#hero{
+    background-image: url('images/eu.png');
+    background-position: top left;
+    background-size: cover;
+}
+
+
+
+#hero .hero{
+    position: relative;
+    justify-content: flex-start;
+
+    padding: 0px 50px;
+    z-index: 1;
+}
+
+#hero .hero::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color: black;
+    opacity: 0.6;
+    z-index: -1;
+
+}
+
+#hero h1{
+    position: relative;
+    display: block;
+    width: fit-content;
+    color:transparent;
+    font-size: 4rem;
+    animation: textReveal 1s forwards;
+    animation-delay: 1.5s;
+}
+
+
+
+#hero span{
+    position: absolute;
+    background-color: wheat;
+    top:0;
+    left:0;
+    width: 0%;
+    height: 100%;
+    animation: overlay 1s forwards;
+    animation-delay: 1s;
+}
+
+#hero .cta{
+    display: inline-block;
+    font-size: 4rem;
+    
+}
+/* End Hero Section */
+
+
+
+@keyframes overlay{
+    50%{
+        width: 100%;
+        left:0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes textReveal{
+    to{
+        color:white;
+    }
+}
+
