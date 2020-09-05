@@ -35,6 +35,10 @@ span{
     color:rgb(173, 141, 80);
 }
 
+#nav{
+    display: none;
+}
+
 .burger{
     display: block;
 }
