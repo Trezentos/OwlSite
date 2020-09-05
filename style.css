@@ -276,6 +276,7 @@ span{
     margin-bottom: 5px;
     color: white;
     font-weight: 300;
+    
 
 }
 
@@ -436,7 +437,7 @@ span{
 }
 
 #footer{
-    background-image:linear-gradient(60deg, rgb(24, 24, 24) 0%, rgb(53, 53, 53) 100%); ;
+    background-image:linear-gradient(60deg, rgb(24, 24, 24) 0%, rgb(53, 53, 53) 100%); 
 }
 
 #footer .footer {
@@ -472,15 +473,22 @@ span{
 
 #footer h1 {
     font-weight: 100;
+    text-align: center;
+
     font-size: 2rem;
 }
 
 #footer p{
     color: white;
+    text-align: center;
+
 }
 
 @media only screen and (max-width: 740px){
+
+
     #nav{
+
         position: fixed;
         width: 100%;
         height: 6vh;
@@ -530,7 +538,6 @@ span{
     }
 
     .nav-links{
-        
         position: fixed;
         right: 0;
         bottom: 0;
@@ -556,7 +563,7 @@ span{
         list-style: none;
     }
     .nav-links li a{
-        font-size: 2.5rem;
+        font-size: 2.0rem;
         color:white;
     }
     .nav-links li a:hover{
